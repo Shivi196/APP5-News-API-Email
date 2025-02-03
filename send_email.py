@@ -17,7 +17,7 @@ def send_email(message):
 # '''
     with smtplib.SMTP_SSL(host, port, context=context) as server:
         server.login(sender_email, sender_password)
-        server.sendmail(sender_email, user_email, message)
+        server.sendmail(sender_email, user_email,message)
 
 # For Setting up environment variable below are steps
 # 1. Open terminal
